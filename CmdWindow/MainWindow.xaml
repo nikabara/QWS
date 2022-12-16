@@ -1,0 +1,23 @@
+﻿<Window x:Class="CmdWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CmdWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowState="Maximized">
+    <Grid x:Name="MainGrid" Background="#FFB7B7B7" KeyDown="Grid_KeyDown">
+        <TextBox x:Name="MainTextBox" 
+                 HorizontalContentAlignment="Stretch" 
+                 VerticalAlignment="Bottom" Height="15px" 
+                 Background="White" 
+                 BorderThickness="0"
+                 TextAlignment="Left">
+        </TextBox>
+
+        <ScrollViewer Margin="0,0,0,15">
+            <StackPanel x:Name="MainStackPanel" Background="Gray" Block.LineHeight="10px" VerticalAlignment="Bottom"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
